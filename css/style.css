@@ -142,7 +142,7 @@ body{
 
 /*///////FOOTER////////*/
 .footer{
-    background-color: #A51D21;
+    background-color: #b5b5b5;
     color: #000;
     height: auto;
 }
@@ -373,24 +373,6 @@ body{
     height: 100vh;
 }
 
-.swiper-pagination-bullet{
-    display: none;
-    width: 120px;
-    height: 3px;
-    background-color: #151515;
-    border-radius: 0;
-    opacity: 1;
-    margin: 0 15px !important;
-}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 50px;
-}
-
-.swiper-pagination-bullet-active{
-    height: 6px;
-    background-color: #fff;
-}
 /*////////////////////*/
 
 .contacts{

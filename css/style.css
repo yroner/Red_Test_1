@@ -1,0 +1,514 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Sect_Title{
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/*///////HEADER////////*/
+.header{
+    background-color: #151515;
+}
+
+.header-main{
+   background-color: rgba(255, 255, 255, .2);
+   backdrop-filter:blur(20px);
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0; /* Начало от верхнего края */
+   z-index: 10; /* Устанавливаем уровень слоя */
+   width: 100%; /* Ширина на всю страницу */
+}
+
+.header__inner{
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-between; /* Распределяем элементы с равным пространством между ними */
+    align-items: center; /* Центрируем элементы по вертикали */
+    gap: 10px; /* Добавляем расстояние между элементами */
+    padding: 15px;
+}
+
+.header__part{
+    flex: 1 1 auto; /* Позволяет элементам занимать доступное пространство */
+    text-align: center; /* Центрируем текст в кнопках */
+    min-width: 100px; /* Устанавливаем минимальную ширину для кнопок */
+}
+
+.menu__list{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.menu__list-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.menu__list-link:hover{
+    color: #A51D21;
+    text-decoration: underline;
+}
+
+.menu__list-link--active{
+    color: #0066ff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px; 
+}
+
+.menu__list-link--active:hover{
+    text-decoration: underline;
+}
+
+.header__link_log{
+    font-size: 16px;
+    font-weight: 700;
+    color: #A51D21;
+    margin: 0 25px;
+    padding: 8px 16px;
+    background-color: #E3E3E3;
+    border: 1px solid #A51D21;
+    border-radius: 10px;
+    
+}
+
+.header__link_log:hover{
+    background-color: transparent;
+}
+
+.header__link_sing{
+    font-size: 16px;
+    font-weight: 700;
+    color: #E3E3E3;
+    margin: 0 25px;
+    padding: 8px 16px;
+    background-color: #A51D21;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    
+}
+
+.header__link_sing:hover{
+    background-color: transparent;
+}
+/*///////////////*/
+
+/*///////FOOTER////////*/
+.footer{
+    background-color: #b5b5b5;
+    color: #000;
+    height: auto;
+}
+
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Выровняем элементы по верхней линии */
+    gap: 10px; /* Добавляем расстояние между элементами */
+    padding: 15px;
+}
+
+.footer__part__one{
+   display: flex;
+   justify-content: flex-start; /* Логотип прижат к левому краю */
+   align-items: center;
+   flex: 1;
+}
+
+.footer__part__two{
+    display: flex;
+    justify-content: center; /* Центрируем меню */
+    align-items: center;
+    flex: 1;
+}
+
+.footer__part__three{
+    display: flex;
+   flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: flex-end; /* Текст и ссылки выравниваем по правому краю */
+    flex: 1;
+}
+
+.footer__part__three small {
+    margin-bottom: 10px; /* Отступ между копирайтом и ссылкой */
+}
+
+.pri_link{
+    text-decoration: underline;
+}
+
+/*///////////////*/
+.main{
+    flex-grow: 1;
+}
+
+.focus{
+    background-image: url('../images/main_bck.jpg');
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0; /* Убираем отступ */
+    height: auto; 
+    position: relative; /* Чтобы контент не выходил за пределы */
+    z-index: 1; /* Ниже header */
+}
+
+.txt_cont{
+    margin-top: 200px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.1);;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.txt_cont_1{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.txt_cont_2{
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.txt_cont_3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.main_text{
+    background-color: #A51D21;
+    color: #fff;
+}
+
+.demo_sched{
+    background-color: #A51D21;
+    color: #fff;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.demo_sched:hover{
+    background-color: #6b1215;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 90px; /* Расстояние между блоками строго 90px */
+    padding: 20px; /* Отступы вокруг всей секции */
+}
+
+.Block_of_feature{
+    display: flex; /* Включаем Flexbox */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    text-align: center;
+    height: 270px;
+    max-width: 360px;
+    background-color: #43000A;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.Block_of_feature:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.bx{
+    font-size: 50px;
+    background-color: #A51D21;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature_title{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.feature_text{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.invest{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 47px;
+}
+
+.invest_txt{
+    max-width: 576px;
+}
+
+.invest_txt_title{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.invest_txt_txt{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.invest_img{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 5px;
+}
+
+.invest_img-item_1{
+    border-radius: 20px;
+    width: 275px;
+    height: 412px;
+}
+
+.invest_img-item_2{
+    border-radius: 20px;
+    width: 320px;
+    height: 479px;
+}
+
+/*КОНТАКТЫ*/
+
+.main_cont{
+    position: relative; /* Родительский контейнер для абсолютного позиционирования */
+    
+}
+/*SWIPER*/
+
+.swiper{
+    position: relative; /* Оставляем swiper базовым контейнером */
+    z-index: 1; /* Устанавливаем фоновый уровень */
+}
+.swiper::after{
+    content: '';
+    background: rgba(21,21,21,.3);
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.swiper-pagination-bullet{
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    border-radius: 0;
+    opacity: 1;
+    margin: 0 15px !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 50px;
+}
+
+.swiper-pagination-bullet-active{
+    height: 6px;
+    background-color: #fff;
+}
+/*////////////////////*/
+
+.contacts{
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    top: 50%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Смещаем центр блока */
+    z-index: 10; /* Устанавливаем уровень выше swiper */
+    display: flex; /* Для стилизации контента */
+    flex-direction: column; /* Контент в столбик */
+    align-items: center; /* Центрируем текст по горизонтали */
+    max-width: 590px;
+    max-height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter:blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.section-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contacts__title{
+    margin-bottom: 10px;
+    color: #A51D21;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+.contacts__text{
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 32px;
+    padding: 0 30px;
+}
+
+.form{
+    max-width: 580px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__input{
+    max-width: 265px;
+    height: 44px;
+    padding: 18px 20px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: black;
+    transition: border-color 0.3s ease; /* Плавная анимация для фокуса */
+}
+
+.form__input_email{
+    max-width: 100%; /* Занимает всю ширину блока */
+    flex: 1 1 100%; /* Адаптивное поведение */
+}
+
+.form__input::placeholder, .form__textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: black;
+    opacity: 0.5;
+}
+
+.form__textarea{
+    width: 100%;
+    max-height: 140px;
+    resize: none;
+    padding: 28px 20px;
+    border: 1px solid #fff;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: black;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form__btn{ 
+    color: #fff;
+    background-color: #A51D21;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 61px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Анимация смены фона */
+}
+
+.form__btn:hover {
+    background-color: #b33e42; /* Цвет при наведении */
+}
+
+.main.blog{
+    background-image: url('../Login/i1.jpg');
+}

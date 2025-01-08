@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="icon" type="image/svg+xml" href="images/RL.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header header-main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__part one">
+                        <a class="logo" href="index.html">
+                            <img class="logo__inner" src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="header__part two">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="about.html">About</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="pricing.html">Pricing</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link--active" href="contacts.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__part three">
+                        <a class="header__link_log" href="Login/login.html">Login In</a>
+                        <a class="header__link_sing" href="#">Sing Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="main_cont">
+                
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" style="background-image: url(images/slide_1.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide_2.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide_3.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/slide_4.jpg);"></div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="swiper-pagination"></div>
+                </div>
+            </div>
+                <section class="contacts">
+                    <div class="container">
+                        <h2 class="section-title contacts__title">
+                            Contact Us
+                        </h2>
+                        <p class="contacts__text">
+                            Feel free to contact us with questions, potencial partnerships or media inquiries
+                        </p>
+                        <form class="form" action="#">
+                            <input class="form__input" type="text" placeholder="First Name">
+                            <input class="form__input" type="text" placeholder="Last Name">
+                            <input class="form__input form__input_email" type="email" placeholder="E-mail">
+                            <textarea class="form__textarea" placeholder="Your text"></textarea>
+                            <button class="form__btn" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__part__one">
+                        <a class="logo" href="index.html">
+                            <img class="logo__inner" src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="footer__part__two">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="about.html">About</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="pricing.html">Pricing</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="contacts.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__part__three">
+                        <small>Copyright © 2024 All rights reserved. </small>
+                        <a class="pri_link" href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

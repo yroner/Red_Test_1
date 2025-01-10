@@ -604,7 +604,7 @@ body{
     display: flex;
     height: 170px;
     width: 170px;
-    margin: 24px;
+    margin-left: 24px;
     border-radius: 8px;
 
 }
@@ -615,6 +615,7 @@ body{
     flex-direction: column; /* Содержимое внутри элемента идёт вертикально */
     justify-content: center; /* Центрируем текст */
     align-items: flex-start; /* Выравниваем текст по левому краю */
+    margin: 20px;
 }
 
 .member_info{

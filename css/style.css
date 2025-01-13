@@ -362,8 +362,10 @@ body{
 .wrapper.cont{
     display: flex;
     flex-direction: column; /* Строим макет вертикально */
-    height: 100vh; /* Высота страницы на весь экран */
+    height: 100%;
+    width: 100%;
     margin: 0;
+    overflow: auto;
 }
 
 .main_cont{
@@ -372,20 +374,20 @@ body{
     flex-direction: column;
     position: relative;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 /*SWIPER*/
 
 .swiper{
-    flex: 1; /* Занимает всё доступное пространство внутри .main_cont */
-    position: relative;
-    z-index: 1;
     width: 100%;
+    height: 100%;
 }
 
 
 .swiper::after{
     content: '';
-    background: rgba(21, 21, 21, 0.3); /* Полупрозрачный слой */
+    background: rgba(21, 21, 21, 0.3); 
     position: absolute;
     z-index: 5;
     top: 0;
@@ -398,20 +400,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%; /* Свайпер растягивается на высоту родительского контейнера */
+    height: 100%;
 }
 
 /*////////////////////*/
 
 .contacts{
-    position: absolute; /* Абсолютное позиционирование для наложения */
-    top: 50%; /* Центрируем по вертикали */
-    left: 50%; /* Центрируем по горизонтали */
-    transform: translate(-50%, -50%); /* Смещаем центр блока */
-    z-index: 10; /* Устанавливаем уровень выше swiper */
-    display: flex; /* Для стилизации контента */
-    flex-direction: column; /* Контент в столбик */
-    align-items: center; /* Центрируем текст по горизонтали */
+    position: absolute;
+    z-index: 5;
+    display: flex; 
+    align-items: center; 
     max-width: 590px;
     max-height: auto;
     background: rgba(255, 255, 255, 0.3);

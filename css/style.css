@@ -375,7 +375,7 @@ body{
     position: relative;
     height: 100%;
     align-items: center;
-    justify-content: center;
+
 }
 /*SWIPER*/
 
@@ -410,12 +410,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding-top: 300px;
+    padding-top: 150px;
     z-index: 5;
 }
 
-.contacts{
-    margin-top: calc(-300px);  
+.contacts{  
     display: flex; 
     align-items: center; 
     max-width: 590px;

@@ -405,9 +405,17 @@ body{
 
 /*////////////////////*/
 
-.contacts{
-    position: absolute;
+.cont_holder{
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 300px;
     z-index: 5;
+}
+
+.contacts{
+    margin-top: calc(-300px);  
     display: flex; 
     align-items: center; 
     max-width: 590px;

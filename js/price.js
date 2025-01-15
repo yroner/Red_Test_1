@@ -3,6 +3,8 @@ const buttons = document.querySelectorAll('.price_btn');
 const priceCards = document.querySelectorAll('.price_card');
 const standardPrice = document.getElementById('standardPrice');
 const agencyPrice = document.getElementById('agencyPrice');
+const standardlength = document.getElementById('standardlength');
+const agencylength = document.getElementById('agencylength');
 
 // Function to update the URL parameter
 function updateURLParam(param, value) {
@@ -21,10 +23,14 @@ function updatePrices(billingType) {
     // Update prices based on billing type
     if (billingType === 'monthly') {
         standardPrice.textContent = '$250';
+        standardlength.textContent = 'per month';
         agencyPrice.textContent = '$1000';
+        agencylength.textContent = 'per month';
     } else if (billingType === 'annual') {
         standardPrice.textContent = '$2400';
+        standardlength.textContent = 'per year';
         agencyPrice.textContent = '$9600';
+        agencylength.textContent = 'per year';
     }
 }
 

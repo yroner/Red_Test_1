@@ -47,14 +47,48 @@
             </div>
         </header>
         
-        <main class="main blog">
-            <section class="choose">
-                <div class="container">
-                    <h2 class="section-title">
-                        Pricing
-                    </h2>
+        <main class="main">
+            <div class="price_cont">
+                <!-- Title Section -->
+                <div class="price_ttl_sec">
+                    <h2 class="price_ttl">Pricing Plans</h2>
+                    <p class="price_txt">Red Letter AI's pricing plans are flexible and can be canceled at any time.</p>
                 </div>
-            </section>
+                
+                <!-- Toggle Buttons for Monthly and Annual -->
+                <div class="price_btns_sec">
+                    <button class="price_btn active" data-billing="monthly">Monthly</button>
+                    <button class="price_btn" data-billing="annual">Annual (20% Off)</button>
+                </div>
+                <div class="price_plns">
+                    <button class="price_card" data-plan="standard">
+                        <div class="ttl_holder">
+                            <h2 class="pr_btn_ttl">Standard</h2>
+                        </div>
+                        <p class="pr_btn_price" id="standardPrice">$250</p>
+                        <p class="pr_btn_txt">per month</p>
+                        <ul class="pr_btn_features">
+                            <li>Unlimited generation of email, SMS, social media, and press content.</li>
+                            <li>Task tracking and collaboration tools to get you from ideation to approval.</li>
+                            <li>Draft content in your style - Red Letter AI emulates your voice.</li>
+                        </ul>
+                    </button>
+                    <button class="price_card" data-plan="agency">
+                        <div class="ttl_holder">
+                            <h2 class="pr_btn_ttl">Agency</h2>
+                        </div>
+                        <p class="pr_btn_price" id="agencyPrice">$1000</p>
+                        <p class="pr_btn_txt">per month</p>
+                        <ul class="pr_btn_features">
+                            <li>All of the Standard plan designed to be used in an agency setting.</li>
+                            <li>Unlimited workspaces and unrestricted generation.</li>
+                            <li>Uncapped user limit - everyone on your team can have an account.</li>
+                            <li>Manage and track tasks across multiple workspaces.</li>
+                        </ul>
+                    </button>
+                </div>
+                
+            </div>
         </main>
 
         <footer class="footer">
@@ -92,6 +126,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/price.js"></script>
 </body>
 </html>

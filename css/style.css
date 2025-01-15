@@ -525,9 +525,7 @@ body{
     background-color: #b33e42; /* Цвет при наведении */
 }
 
-.main.blog{
-    background-image: url('../Login/i1.jpg');
-}
+/*////////////////////*/
 
 /*ABOUT*/
 
@@ -647,4 +645,154 @@ body{
     border-radius: 10px;
 }
 
+/*////////////////////////*/
+
+/*////PRICING//////*/
+.price_cont {
+    overflow: auto;
+    background-image: url('../images/price_bck.jpg'); /* Background image for the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    padding: 40px 20px; /* Padding for spacing on smaller screens */
+}
+
+/* Title section styling */
+.price_ttl_sec {
+    text-align: center;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter:blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #000;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.price_ttl {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.price_txt {
+    font-size: 18px;
+}
+
+/* Button section for monthly/annual toggle */
+.price_btns_sec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    backdrop-filter:blur(30px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+}
+
+.price_btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.price_btn:hover {
+    background-color: #d4d4d4; /* Lighter hover effect */
+}
+
+.price_btn.active {
+    background-color: #A51D21; /* Active button background */
+    color: white; /* Active button text */
+}
+
+/* Plans section styling */
+.price_plns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between the cards */
+}
+
+/* Individual plan cards */
+.price_card {
+    background-color: #A51D21;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 300px; /* Fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.price_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Title and price inside the card */
+
+.ttl_holder{
+    width: 100%;
+    align-items: center;
+}
+
+.pr_btn_ttl {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pr_btn_price {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.pr_btn_txt {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* List of features inside the cards */
+.pr_btn_features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.pr_btn_features li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Feature icon styling */
+.pr_btn_features li::before {
+    content: '✔'; /* Checkmark icon */
+    color: #fff;
+    font-weight: bold;
+}
 /*////////////////////////*/

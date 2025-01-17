@@ -49,32 +49,27 @@ body{
     margin: 0; /* Убираем отступы */
     display: flex;
     flex-direction: column; /* Вертикальная структура */
-}
-
-.main {
-    margin-top: 60px; /* Учитываем высоту хедера, чтобы контент не находился под ним */
-    flex: 1;
-    width: 100%;
-    height: auto;
     overflow-y: auto;
 }
-/*///////HEADER////////*/
-.header{
-    background-color: #151515;
-}
 
-/* HEADER */
-.header-main {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
-    position: fixed; /* Меняем на fixed */
-    top: 0;
+.main{
+    flex: 1; /* Растягиваем основной контент */
+    width: 100%;
+    height: auto; 
+    flex-grow: 1;
+}
+/*///////HEADER////////*/
+
+.header-main{
+    background-color: #151515;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter:blur(20px);
+    position: absolute;
     left: 0;
     right: 0;
-    z-index: 10; /* Хедер остаётся выше всего */
-    width: 100%;
-    height: auto; /* Позволяет адаптироваться по высоте */
-    padding: 15px 0; /* Добавляем отступы для удобства */
+    top: 0; /* Начало от верхнего края */
+    z-index: 10; /* Устанавливаем уровень слоя */
+    width: 100%; /* Ширина на всю страницу */
 }
 
 .header__inner{
@@ -362,15 +357,6 @@ body{
 
 /*КОНТАКТЫ*/
 
-.wrapper.cont{
-    display: flex;
-    flex-direction: column; /* Строим макет вертикально */
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    overflow: auto;
-}
-
 .main_cont{
     flex: 1; /* Занимает всё доступное пространство между хедером и футером */
     display: flex;
@@ -532,23 +518,17 @@ body{
 
 /*ABOUT*/
 
-.wrapper.about{
-    overflow: auto;
+.about_content{
     background-image: url('../images/about_back.jpg');
     display: flex;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-}
-
-.about_content{
-    display: flex;
-    margin-top: 150px;
-    width: 100%;
-    justify-content: center;
+    background-position: center
+   
 }
 
 .Mission{
@@ -798,4 +778,104 @@ body{
     color: #fff;
     font-weight: bold;
 }
+/*////////////////////////*/
+
+/*///////BLOG////////*/
+
+.blog_holder {
+    background-image: url('../Login/i1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Прижимаем к левому краю */
+    height: 100%;
+}
+
+.ttl_holder_blog {
+    margin-top: 300px;
+    margin-bottom: 130px;
+    text-align: left; /* Устанавливаем выравнивание текста влево */
+}
+
+.blog_mod_ttl {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: left; /* Дополнительно выравниваем текст влево */
+}
+
+.blog_mod_txt {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 0;
+    color: #fff;
+    text-align: left; /* Выравниваем текст влево */
+}
+
+.blog_wrapper {
+    background-color: #A51D21;
+    width: 100%;
+    padding: 50px 100px  30px;
+    justify-content: center;
+}
+
+.blog_wrapper_2 {
+    margin: auto;
+    max-width: 1200px;
+    background-color: #43000A;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog_title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: 32px;
+}
+
+.art_holder{
+    display: grid;
+    gap: 25px; /* Устанавливаем расстояние между карточками */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.art_card{
+    border-radius: 10px;
+    background-color: #fff;
+    width: fit-content;
+    overflow: hidden; /* Обрезаем содержимое за пределами блока */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для объёма */
+    margin-bottom: 20px; /* Расстояние между карточками */
+    
+}
+
+.art_img{
+    height: 200px;
+    width: 250px;
+    object-fit: cover; /* Обрезаем изображение, сохраняя пропорции */
+    object-position: center; /* Центрируем изображение */
+}
+
+.art_date{
+    color: #000;
+}
+
+.art_ref{
+    color: #000;
+}
+
+.art_txt{
+    color: #000;
+}
+
 /*////////////////////////*/

@@ -795,6 +795,7 @@ body{
 .ttl_holder_blog {
     margin-top: 300px;
     margin-bottom: 130px;
+    margin-left: 50px;
     text-align: left; /* Устанавливаем выравнивание текста влево */
 }
 

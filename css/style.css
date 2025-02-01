@@ -868,15 +868,33 @@ body{
 }
 
 .art_date{
-    color: #000;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .art_ref{
-    color: #000;
+    margin-top: 10px;
+    display: flex;
+    color: rgb(165, 29, 33);
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 250px;
+    justify-content: center; 
+    text-align: center;
+}
+
+.art_ref:hover{
+    text-decoration: underline;
 }
 
 .art_txt{
-    color: #000;
+    display: flex;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 250px;
+    padding: 10px;
 }
 
 /*////////////////////////*/

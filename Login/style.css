@@ -120,3 +120,8 @@ body{
     color: green;
     text-decoration: underline;
 }
+
+.btn.tmp{
+    background-color:blueviolet;
+    color: #fff;
+}
